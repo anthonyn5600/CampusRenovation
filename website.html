@@ -31,18 +31,41 @@
             // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             // }).addTo(map);
+
             map.on('click', function(e){
             var coord = e.latlng;
             var lat = coord.lat;
             var lng = coord.lng;
             console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
             });
+
             // define rectangle geographical bounds
             var svgFile = "https://www.fullerton.edu/campusmap/CSUF-MONOLITH-MAP.svg"
             L.imageOverlay(svgFile,svgbounds).addTo(map);
 
             //Marks
-            L.marker([33.88761969411337,-117.88642485929346]).addTo(map)
+            L.marker([33.88708614592159,-117.88824256016154],title='Lot A').addTo(map) //Lot A
+            L.marker([33.885880821429794,-117.8880494679073]).addTo(map) //Lot A South
+            L.marker([33.88553864244769,-117.8878521199531]).addTo(map) //Lot A South Faculty/Staff
+            L.marker([33.88763789636954,-117.88644997203772]).addTo(map) //Lot G
+            L.marker([33.88540281692284,-117.88844796073874]).addTo(map) // Parking Transportation
+            L.marker([33.88611801319477,-117.88786216042715]).addTo(map) // Children's Center
+            L.marker([33.884875545262304,-117.88738241227566]).addTo(map) // Lot D
+            L.marker([33.88492052390292,-117.88808485819811]).addTo(map) // Corporate
+            L.marker([33.88417548003728,-117.88841379869518]).addTo(map) // University Police
+            L.marker([33.88422268592914,-117.88788486163841]).addTo(map) // State College Parking Structure
+            L.marker([33.88423381904809,-117.8873739700441]).addTo(map) //Student Recreation Center
+            L.marker([33.88425474966924,-117.8863499955135]).addTo(map) // Titan Gym
+            L.marker([33.884111797101376,-117.88613595840106]).addTo(map) //Kinesiology and Health Science
+            L.marker([33.883759535213166,-117.88805109418483]).addTo(map) //Lot R
+            L.marker([33.88370475876849,-117.88842942177865]).addTo(map) // Gollenher Alumni House
+            L.marker([33.88659807313445,-117.8867880640296]).addTo(map) //Titan Stadium
+            L.marker([33.885584956602045,-117.88627838273968]).addTo(map) //Titan Track and Field
+            L.marker([33.8866225657403,-117.88577178423766]).addTo(map) // Goodwin Field
+            L.marker([33.886119794504594,-117.88556323485108]).addTo(map) //Anderson Family Field
+            L.marker([33.884944571733264,-117.88677405437808]).addTo(map) //Titan Tennis Courts
+
+
             // create an orange rectangle
             // L.rectangle(bounds, {color: "#ff7800", weight: 1}).addTo(map);
             // map.setMinZoom( map.getBoundsZoom( map.options.maxBounds ) );
