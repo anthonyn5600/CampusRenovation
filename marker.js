@@ -56,24 +56,18 @@ L.marker([33.884747011147944, -117.88456678390504], title='Lot H').addTo(map) //
 L.marker([33.8847673294601, -117.88415640592578], title='Lot J').addTo(map) //Lot J
 
 //Southwest Corner of CSUF Map
-L.marker([33.88211613922201, -117.88863204714603]).addTo(map) //TSU from SC
-L.marker([33.88211613922201, -117.88863204714603]).addTo(map) //Food Court from SC
-L.marker([33.88165353413536, -117.88751088378518]).addTo(map) //TSU from Titan Walk
-L.marker([33.881253275718976, -117.88764030036934]).addTo(map) // TSU from Nutwood
-L.marker([33.88158951516864, -117.88680814499652]).addTo(map) //Titan Shop from TW
-L.marker([33.88217793100714, -117.88682423825472]).addTo(map) //Bookstore from Gym
-L.marker([33.880596, -117.887875]).addTo(map) //Art Building
-L.marker([33.880608, -117.887545]).addTo(map) //Meng Hall from TSU
-L.marker([33.880120, -117.887289]).addTo(map) //Meng Hall from Nutwood
-//Need Class entrances to performing arts building
-L.marker([33.878969, -117.885577]).addTo(map) //Dan Black Hall
-L.marker([33.879970, -117.885568]).addTo(map) //McCarthy Hall
-L.marker([33.881532, -117.885855]).addTo(map) //Library from TW
-L.marker([33.881537, -117.884991]).addTo(map) //Library from CS
-L.marker([33.880888, -117.885384]).addTo(map) //Library from McCarthy
-L.marker([33.879606, -117.887851]).addTo(map) //Nutwood
-L.marker([33.878571, -117.887257]).addTo(map) //Lot C
-L.marker([33.878393, -117.888885]).addTo(map) //Lot C West
+L.marker([33.88334420091131, -117.88766205310823]).addTo(map) //TSU
+L.marker([33.88339318832411, -117.88678228855133]).addTo(map) //Titan Shop
+L.marker([33.88252922437201, -117.88783907890321]).addTo(map) //Art Building
+L.marker([33.88246242267113, -117.88670718669893]).addTo(map) //Performing Arts Building
+L.marker([33.88156727483332, -117.8859293460846]).addTo(map) //Dan Black Hall
+L.marker([33.88192355370477, -117.88591325283052]).addTo(map) //McCarthy Hall
+L.marker([33.8831571578037, -117.88577914237977]).addTo(map) //Library
+L.marker([33.88155391434671, -117.88783371448517]).addTo(map) //Nutwood
+L.marker([33.88117536635646, -117.8870075941086]).addTo(map) //Lot C
+L.marker([33.881108563595625, -117.88812339305879]).addTo(map) //Lot C West
+L.marker([33.882787523789936, -117.88892805576326]).addTo(map) //Titan Hall
+L.marker([33.88300574165434, -117.88922846317291]).addTo(map) //ASC
 
 //L.marker([ , ]).addTo(map)
 
