@@ -68,6 +68,7 @@ L.marker([33.88117536635646, -117.8870075941086]).addTo(map) //Lot C
 L.marker([33.881108563595625, -117.88812339305879]).addTo(map) //Lot C West
 L.marker([33.882787523789936, -117.88892805576326]).addTo(map) //Titan Hall
 L.marker([33.88300574165434, -117.88922846317291]).addTo(map) //ASC
+L.marker([33.88189933792236, -117.88701295852663]).addTo(map) //Greenhouse Complex
 
 //L.marker([ , ]).addTo(map)
 
