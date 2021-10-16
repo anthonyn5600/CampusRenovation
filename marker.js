@@ -35,6 +35,9 @@ L.marker([33.88229569653119,-117.88418054580688]).addTo(map) //Lot F
 L.marker([33.88185034965183,-117.88449168205263]).addTo(map) //Lot M
 L.marker([33.880316111854974,-117.88448363542558]).addTo(map) //CP Lot
 L.marker([33.8800377638701,-117.88445681333543]).addTo(map) //Lot S
+L.marker([33.88367180369954,-117.8839471936226]).addTo(map) //Engineering tower
+L.marker([33.88367180369954,-117.88433611392976]).addTo(map) //Computer Science tower
+L.marker([33.88412604779525,-117.88500666618349]).addTo(map) //Student health and counseling center
 
 //Northeast Corner of CSUF Map
 L.marker([33.88613226362145, -117.8834241628647], title='Valencia Student Dorms').addTo(map) //Sycamore/Valencia Student Dorms
