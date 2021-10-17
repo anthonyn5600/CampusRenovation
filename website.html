@@ -2,9 +2,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="leaflet\dist\leaflet.css" />
+    <link rel="stylesheet" href="map.css"/>
     <script src="leaflet\dist\leaflet.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
     <script src="leaflet-bing-layer-gh-pages\leaflet-bing-layer.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
     <style>
         /* #map {position: absolute; top:0; bottom:0; left: 0; right: 0;} */
         #map {height:720px}
@@ -17,6 +20,7 @@
     <div id="map">
         <script src="initialize.js"></script>
         <script src="marker.js"></script>
+        <script src="routing.js"></script>
     </div>
 </body>
 </html>
