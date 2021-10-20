@@ -6,21 +6,27 @@
     <script src="leaflet\dist\leaflet.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
     <script src="leaflet-bing-layer-gh-pages\leaflet-bing-layer.js"></script>
+    <script type="text/javascript" src="initialize-event.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
 <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
-    <style>
-        /* #map {position: absolute; top:0; bottom:0; left: 0; right: 0;} */
-        #map {height:720px}
-    </style>
 </head>
 <body>
     <div>
         <h1>Campus Renovation</h1>
     </div>
-    <div id="map">
-        <script src="initialize.js"></script>
-        <script src="marker.js"></script>
-        <script src="routing.js"></script>
+    <div id="map-container">
+        
+        <div id="event">
+            <p id="event-title">Events</p>
+            <div id="event-scroll">
+            </div>
+        </div>
+        <div id="map">
+            <script src="initialize.js"></script>
+            <script src="marker.js"></script>
+            <script src="routing.js"></script>
+        </div>
     </div>
+
 </body>
 </html>
