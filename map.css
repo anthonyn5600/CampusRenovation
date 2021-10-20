@@ -7,7 +7,6 @@ h1 {
     color:whitesmoke;
 }
 #map {
-    margin: 0 auto;
     width:700px;
     min-height: 900px;
     height:900px;
@@ -16,4 +15,46 @@ h1 {
     /* border: 5px solid white;
     outline-style: solid;
     outline-color: white; */
+}
+#map-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#event {
+    font-family: arial;
+    position:relative;
+    width:600px;
+    height:500px;
+    margin-right: 20px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+#event-title {
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+}
+
+#event-scroll{
+    background-color:white;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.event-details {
+    display: flex;
+    font-size: 15px;
+    width:100%;
+    margin: 5px;
+    margin-bottom: 10px;
+    justify-content: left;
+}
+
+.event-details:hover {
+    background-color: deepskyblue;
 }
