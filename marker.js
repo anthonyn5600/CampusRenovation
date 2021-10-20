@@ -124,7 +124,6 @@ console.log(a._latlng)
 // L.marker([33.884293048692975, -117.88353949785234], title='Gastronome').addTo(map) //Gastronome
 // L.marker([33.884747011147944, -117.88456678390504], title='Lot H').addTo(map) //Lot H
 // L.marker([33.8847673294601, -117.88415640592578], title='Lot J').addTo(map) //Lot J
-
 // //Southwest Corner of CSUF Map
 // L.marker([33.88334420091131, -117.88766205310823]).addTo(map) //TSU
 // L.marker([33.88339318832411, -117.88678228855133]).addTo(map) //Titan Shop

@@ -18,8 +18,6 @@ map.on('click', function(e){
 var coord = e.latlng;
 var lat = coord.lat;
 var lng = coord.lng;
-// var x = e.layerPoint.x;
-// var y = e.layerPoint.y;
 console.log(`L.marker([${lat},${lng}]).addTo(map)`);
 });
 
