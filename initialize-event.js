@@ -2,8 +2,7 @@ function showEvents(data) {
     const eventcontainer = document.getElementById('event-scroll')
     for (var i = 0; i < data.length; i++){
         const para = document.createElement("p");
-        para.className = "event-details";
-        para.id = `${data[i].location}`
+        para.className = `event-details`;
         para.innerHTML =   `Event Title: ${data[i].event_title} <br/> 
                             Location: ${data[i].location} <br/>
                             Time: ${data[i].event_time}`
