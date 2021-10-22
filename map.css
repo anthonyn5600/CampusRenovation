@@ -47,14 +47,20 @@ h1 {
 }
 
 .event-details {
-    display: flex;
     font-size: 15px;
     width:100%;
-    margin: 5px;
-    margin-bottom: 10px;
+    margin: 0px;
     justify-content: left;
+    text-decoration: none;
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    color:black;
 }
 
 .event-details:hover {
     background-color: deepskyblue;
+    font-weight:bold;
+    cursor: pointer;
 }
