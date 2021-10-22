@@ -3,6 +3,7 @@ function showEvents(data) {
     for (var i = 0; i < data.length; i++){
         const para = document.createElement("p");
         para.className = "event-details";
+        para.id = `${data[i].location}`
         para.innerHTML =   `Event Title: ${data[i].event_title} <br/> 
                             Location: ${data[i].location} <br/>
                             Time: ${data[i].event_time}`
