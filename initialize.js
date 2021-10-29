@@ -6,7 +6,7 @@ minZoom:17,
 maxZoom: 19     
 });
 
-map.setMaxBounds(bounds)
+// map.setMaxBounds(bounds)
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
