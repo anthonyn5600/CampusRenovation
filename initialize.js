@@ -19,3 +19,21 @@ var lat = coord.lat;
 var lng = coord.lng;
 console.log(`L.marker([${lat},${lng}]).addTo(map)`);
 });
+
+//Live Tracking Implementation
+setInterval(() => {
+    navigator.geolocation.getCurrentPosition(getPosition)
+}, 500)
+
+
+function getPosition(position){
+    var location
+        if(location){
+        map.removeLayer(lockMark)
+        }
+    var curLat = position.coords.latitude
+    var curLong = position.coords.longitude
+    console.log("Your current location is " + curLat + ", " + curLong)
+    location = L.marker([curLat,curLong]).addTo(map)
+ 
+}
