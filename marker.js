@@ -18,12 +18,23 @@ https://stackoverflow.com/questions/33727251/cannot-add-marker-dynamically-with-
 -Clarification on what triggers the waypoint to come up
 */
 
-function waypoint(event) {
-    event.target.setOpacity(1);
-}
+// function waypoint(point) {
+//     //event.target.setOpacity(1);
+//     point.setOpacity(1);
+// }
 
 //var LotA = L.marker([33.88739670088401,-117.88914531469347]).addTo(map)
-var LotA = L.circleMarker([33.88739670088401,-117.88914531469347], 5).setOpacity(0.5).on('click', waypoint).addTo(map)
+//var LotA = L.circleMarker([33.88739670088401,-117.88914531469347], 5).setOpacity(0.5).on('click', waypoint).addTo(map)
+var LotA = L.circleMarker([33.88739670088401,-117.88914531469347], {opacity: 0.0, radius: 50}).addTo(map).on('mouseover', function(e) {
+    LotA.setStyle({opacity:1.0}).on('mouseout', function(e){
+        LotA.setStyle({opacity: 0});
+    })
+});
+
+// LotA.on("click", function(e) {
+//     setOpacity(1);
+// })
+
 var LotS = L.marker([33.888228886602846,-117.88657844066621]).addTo(map)
 var LotG = L.marker([33.88489786727004,-117.88873493671419]).addTo(map)
 var TitanStadium = L.marker([33.88667917748236,-117.88701295852663]).addTo(map)
