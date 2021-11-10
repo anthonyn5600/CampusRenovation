@@ -1,15 +1,21 @@
 
 body {
-    background-color:#242124;
+    background-color:#2f3136;
 }
 
 h1 {
     color:whitesmoke;
 }
+
+button {
+    margin-left:5px;
+    border-radius: 10px;
+    height:50px;
+}
 #map {
-    width:700px;
+    width:800px;
     min-height: 900px;
-    height:900px;
+    height:950px;
     border-radius: 15px;
     box-shadow: white 0px 1px 2px 0px, white 0px 2px 6px 2px; 
     /* border: 5px solid white;
@@ -21,14 +27,40 @@ h1 {
     justify-content: center;
     flex-direction: row;
 }
-#event {
+
+#left-side {
     font-family: arial;
-    position:relative;
+    border-radius: 15px;
     width:600px;
+    height: 950px;
+}
+
+#building {
+    background-color: #36393E;
+    margin-top: 50px;
+    margin-right: 20px;
+    height:365px;
+}
+
+#building-title {
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+}
+
+#building-scroll {
+    background: white;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: inherit;
+}
+#event {
+    position:relative;
     height:500px;
     margin-right: 20px;
     border-radius: 15px;
-    background-color: black;
+    background-color: #36393E;
 }
 
 #event-title {
@@ -43,15 +75,14 @@ h1 {
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100%;
-    height: 100%;
+    height: inherit;
 }
 
-.event-details {
+.event-details,.building-name {
     font-size: 15px;
     width:100%;
     margin: 0px;
     justify-content: left;
-    text-decoration: none;
     border: 1px solid black;
     padding-left: 5px;
     padding-top:5px;
@@ -59,12 +90,12 @@ h1 {
     color:black;
 }
 
-.event-details:hover {
+.building-name {
+    text-align: center;
+}
+.event-details:hover,.building-name:hover {
     background-color: deepskyblue;
     font-weight:bold;
     cursor: pointer;
 }
 
-.test {
-    color:deepskyblue;
-}
