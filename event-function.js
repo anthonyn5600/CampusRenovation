@@ -1,8 +1,17 @@
-function waypoint(event) {
+function waypoint_mousein(event) {
+    event.target.setOpacity(0.5)
+}
+
+function waypoint_mouseout(event) {
+    if(event.target["options"]["opacity"] != 1) {
+        event.target.setOpacity(0)
+    }
+}
+function waypoint_click(event) {
     event.target.setOpacity(1)
 }
 
-function click(event) {
+function eventClick(event) {
     // console.log(event.srcElement.innerHTML)
     let panel = event.srcElement.textContent
     let located = ''
@@ -26,64 +35,75 @@ function zoomtoWaypoint(site) {
 
     switch(site) {
         case "Extension & International Programs (EIP)":
-            map.panTo(TitanHall._latlng)
+            map.flyTo(TitanHall._latlng,18)
             TitanHall.setIcon(greenIcon)
             break
         case "Alumni Engagement":
-            map.panTo(Golleher._latlng)
+            map.flyTo(Golleher._latlng,18)
             Golleher.setIcon(greenIcon)
             break
         case "Faculty Development Center (FDC)":
-            map.panTo(Golleher._latlng)
+            map.flyTo(Golleher._latlng,18)
             Golleher.setIcon(greenIcon)
             break
         case "College of Natural Sci & Math (CNSM)":
-            map.panTo(McCarthy._latlng)
+            map.flyTo(McCarthy._latlng,18)
             McCarthy.setIcon(greenIcon)
             break
         case "This Osher Lifelong Learning Institute course is open to the public and is held in Mackey Auditorium in the Ruby Gerontology Center on the CSUF campus.":
-            map.panTo(RubyGerontology._latlng)
+            map.flyTo(RubyGerontology._latlng,18)
             RubyGerontology.setIcon(greenIcon)
             break
         case "Osher Lifelong Learning Institute (OLLI)":
-            map.panTo(RubyGerontology._latlng)
+            map.flyTo(RubyGerontology._latlng,18)
             RubyGerontology.setIcon(greenIcon)
             break
         case "Theatre (THTR)":
-            map.panTo(LotA._latlng)
+            map.flyTo(VisualArt._latlng,18)
+            VisualArt.setIcon(greenIcon)
             break
         case "Biological Science (BIOL)":
-            map.panTo(LotA._latlng)
+            map.flyTo(McCarthy._latlng,18)
+            McCarthy.setIcon(greenIcon)
             break
         case "College of the Arts (COTA)":
-            map.panTo(LotA._latlng)
+            map.flyTo(VisualArt._latlng,18)
+            VisualArt.setIcon(greenIcon)
             break
         case "Art (ART)":
-            map.panTo(LotA._latlng)
+            map.flyTo(VisualArt._latlng,18)
+            VisualArt.setIcon(greenIcon)
             break
         case "Come learn and practice research-based strategies for providing efficient, effective feedback on student writing.":
-            map.panTo(LotA._latlng)
+            map.flyTo(StudentRec._latlng,18)
+            StudentRec.setIcon(greenIcon)
             break
         case "College of Hum & Social Sciences (CHSS)":
-            map.panTo(LotA._latlng)
+            map.flyTo(Humanities._latlng,18)
+            Humanities.setIcon(greenIcon)
             break
         case "Athletics":
-            map.panTo(LotA._latlng)
+            map.flyTo(TrackField._latlng,18)
+            TrackField.setIcon(greenIcon)
             break
         case "Mathematics (MATH)":
-            map.panTo(LotA._latlng)
+            map.flyTo(McCarthy._latlng,18)
+            McCarthy.setIcon(greenIcon)
             break
         case "College of Bus & Econ (CBE)":
-            map.panTo(LotA._latlng)
+            map.flyTo(Mihaylo._latlng,18)
+            Mihaylo.setIcon(greenIcon)
             break
         case "School of Music":
-            map.panTo(LotA._latlng)
+            map.flyTo(VisualArt._latlng,18)
+            VisualArt.setIcon(greenIcon)
             break
         case "Xpath Error":
             console.log("error")
             break
         case "Division of Academic Affairs (VPAA)":
-            map.panTo(LotA._latlng)
+            map.flyTo(StudentRec._latlng,18)
+            StudentRec.setIcon(greenIcon)
             break
     }
 }
