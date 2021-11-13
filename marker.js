@@ -23,19 +23,26 @@ https://stackoverflow.com/questions/33727251/cannot-add-marker-dynamically-with-
 //     point.setOpacity(1);
 // }
 
-//var LotA = L.marker([33.88739670088401,-117.88914531469347]).addTo(map)
-//var LotA = L.circleMarker([33.88739670088401,-117.88914531469347], 5).setOpacity(0.5).on('click', waypoint).addTo(map)
 var LotA = L.circleMarker([33.88739670088401,-117.88914531469347], {opacity: 0.0, radius: 50}).addTo(map).on('mouseover', function(e) {
     LotA.setStyle({opacity:1.0}).on('mouseout', function(e){
         LotA.setStyle({opacity: 0});
     })
 });
 
-// LotA.on("click", function(e) {
-//     setOpacity(1);
-// })
+var LotS = L.circleMarker([33.888228886602846,-117.88657844066621], {opacity: 0.0, radius: 50}).addTo(map).on('mouseover', function(e) {
+    LotS.setStyle({opacity:1.0}).on('mouseout', function(e){
+        LotS.setStyle({opacity: 0});
+    })
+});
 
-var LotS = L.marker([33.888228886602846,-117.88657844066621]).addTo(map)
+/*
+To Do:
+-Need to set all of these area VARS to empty ones
+-Map to hold all the long/lat coordinates and associate with the area VARS
+-Iterate through to add the circleMarker properties and .addTo(map) to each one
+    -This will resolve not having to manually add the properties one by one
+*/
+
 var LotG = L.marker([33.88489786727004,-117.88873493671419]).addTo(map)
 var TitanStadium = L.marker([33.88667917748236,-117.88701295852663]).addTo(map)
 var GoodwinField = L.marker([33.88674152265657,-117.88546800613405]).addTo(map)
