@@ -15,18 +15,17 @@ var yellowIcon = new L.Icon({
     popupAnchor: [1, -34],
     shadowSize: [41, 41]
   });
-  
-// map.setMaxBounds(bounds)
-var buttonpressed = false
-
-var me = L.marker([0,0], {draggable: true}).addTo(map)
-me.setIcon(yellowIcon)
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+var buttonpressed = false
+var me = L.marker([0,0], {draggable: true})
+me.setIcon(yellowIcon)
+
 function buttonClicked() {
+    me.addTo(map)
     buttonpressed = true
 }
 
@@ -34,7 +33,6 @@ map.on('click', function(e){
 var coord = e.latlng;
 var lat = coord.lat;
 var lng = coord.lng;
-console.log(`L.marker([${lat},${lng}]).addTo(map)`);
 buttonpressed = false
 });
 
