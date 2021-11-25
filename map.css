@@ -7,6 +7,19 @@ h1 {
     color:whitesmoke;
 }
 
+#right-container {
+    margin-left:10px;
+    display: flex;
+    font-family:arial;
+    flex-direction: column;
+}
+
+#right-container button {
+    width:150px;
+}
+#right-container div {
+    border-radius: 10px;
+}
 button {
     margin-top: 5px;
     margin-left:2px;
