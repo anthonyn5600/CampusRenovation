@@ -1,9 +1,9 @@
-const {Builder,By} = require('selenium-webdriver');
+const { Builder, By } = require('selenium-webdriver');
 const fs = require('fs')
 async function start() {
     let driver = await new Builder().forBrowser('chrome').build()
     await driver.get('http://calendar.fullerton.edu/');
-    await driver.manage().setTimeouts( { implicit: 4000 } );
+    await driver.manage().setTimeouts({ implicit: 4000 });
 
     // const title = driver.findElement(By.xpath("//*[@id='divA_Ajax_shell_0']"))
     // const child = title.findElement(By.id('title_divA_Ajax_0'))
@@ -25,10 +25,10 @@ async function start() {
             }
             let info_to_file = JSON.stringify(info);
             fs.appendFile('event.json', info_to_file + '\n', err => {
-            if (err) {
-                console.error(err)
-                return
-            }
+                if (err) {
+                    console.error(err)
+                    return
+                }
             })
         }
         catch (error) {
@@ -42,10 +42,10 @@ async function start() {
             }
             let info_to_file = JSON.stringify(info);
             fs.appendFile('event.json', info_to_file + '\n', err => {
-            if (err) {
-                console.error(err)
-                return
-            }
+                if (err) {
+                    console.error(err)
+                    return
+                }
             })
         }
         let close = await page.findElement(By.css('input')).click()
