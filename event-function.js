@@ -1,15 +1,16 @@
-var previousClick
+var previousClick //used in zoomtoWaypoint function
 //function to indicate that an event have been left-click on the window
 function eventClick(event) {
-    // console.log(event.srcElement.innerHTML)
     let panel = event.srcElement.textContent
     let located = ''
+    //search through the event_locations[i] and finding if it match with the location that was clicked on
     for (let i = 0; i < event_location.length; i++) {
         if (panel.includes(event_location[i])) {
             located = event_location[i]
         }
     }
-    zoomtoWaypoint(located)
+    if (located != '')
+        zoomtoWaypoint(located)
 }
 //function to indicate that building have been left-clicked on the window
 function buildingClick(name) {

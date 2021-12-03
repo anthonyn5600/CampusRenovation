@@ -51,16 +51,17 @@ function buttonClicked() {
     buttonPressed = true
 }
 
-//help make the marker stop following the cursor
-map.on('click', function (e) {
-    buttonPressed = false
-});
-
 //marker follow the cursor
 map.on('mousemove', function (follow) {
     if (buttonPressed)
         me.setLatLng(follow.latlng)
 })
+
+//help make the marker stop following the cursor
+map.on('click', function (e) {
+    buttonPressed = false
+});
+
 
 //Live Tracking Implementation
 // setInterval(() => {
