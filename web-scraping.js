@@ -5,10 +5,7 @@ async function start() {
     await driver.get('http://calendar.fullerton.edu/');
     await driver.manage().setTimeouts({ implicit: 4000 });
 
-    // const title = driver.findElement(By.xpath("//*[@id='divA_Ajax_shell_0']"))
-    // const child = title.findElement(By.id('title_divA_Ajax_0'))
     let eventlist = driver.findElements(By.xpath('//ul[@class="EventContainer_UL"]//div[@class="EventCard_Shell Events_CalendarListDetails "]'))
-
 
     for (let event of await eventlist) {
         let detail = await event.findElement(By.css('a')).click()

@@ -1,4 +1,5 @@
 var previousClick
+//function to indicate that an event have been left-click on the window
 function eventClick(event) {
     // console.log(event.srcElement.innerHTML)
     let panel = event.srcElement.textContent
@@ -10,28 +11,15 @@ function eventClick(event) {
     }
     zoomtoWaypoint(located)
 }
-
+//function to indicate that building have been left-clicked on the window
 function buildingClick(name) {
     zoomtoWaypoint(name)
 }
+//Pan to the location based off lat/long coordinate
+//It will set the destination icon marker to green
 function zoomtoWaypoint(site) {
-    var greenIcon = new L.Icon({
-        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [1, -34],
-        shadowSize: [41, 41]
-    });
 
-    var blueIcon = new L.Icon({
-        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
-        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [1, -34],
-        shadowSize: [41, 41]
-    });
+    //in the case that a prior bulding/event building had their marker changed, it will reset it back to blue
     if (previousClick != null) {
         previousClick.setIcon(blueIcon)
     }
