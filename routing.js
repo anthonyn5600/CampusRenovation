@@ -1,19 +1,14 @@
-let accessToken = 'sk.eyJ1IjoiZGFya2xpZ2h0MXgiLCJhIjoiY2t1dXd0NW40MWlnaTJ3bzZ4cjZ0NHBpeiJ9.jmnkhWYEbxzrC_eMArrdGg'
-var currentRoute
-// currentRoute = L.Routing.control({
-//     waypoints: [
-//         L.latLng(33.88039098730793,-117.88849353790285),
-//         L.latLng(33.88231100528884,-117.88264095783235),
-//     ],
-//     router: L.Routing.mapbox(accessToken, {profile: 'mapbox/walking'})
+let accessToken = 'sk.eyJ1IjoiZGFya2xpZ2h0MXgiLCJhIjoiY2t1dXd0NW40MWlnaTJ3bzZ4cjZ0NHBpeiJ9.jmnkhWYEbxzrC_eMArrdGg' //used for the mapbox routing calculation
 
-// }).addTo(map);
+//remove any current route on the map
 function routeRemove() {
     currentRoute.spliceWaypoints(0, 2)
     map.removeLayer(me)
     var legend = document.getElementsByClassName("leaflet-routing-container leaflet-bar leaflet-control")
     legend.item(0).remove()
 }
+
+//create a route from the waypoint placed down 
 function routeTo(location) {
     if (me.getLatLng().lat == 0 && me.getLatLng().lng == 0) {
         return
