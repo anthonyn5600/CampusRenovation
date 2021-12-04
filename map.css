@@ -1,4 +1,6 @@
-
+.fade{
+    animation: transitionIn 0.75s;
+}
 body {
     background-color:#2f3136;
 }
@@ -27,6 +29,7 @@ button {
     height:50px;
 }
 #map {
+    animation: transitionIn 0.75s;
     width:800px;
     min-height: 900px;
     height:950px;
@@ -37,12 +40,14 @@ button {
     outline-color: white; */
 }
 #map-container {
+    animation: transitionIn 0.75s;
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
 #left-side {
+    animation: transitionIn 0.75s;
     font-family: arial;
     border-radius: 15px;
     width:600px;
@@ -50,6 +55,7 @@ button {
 }
 
 #building {
+    animation: transitionIn 0.75s;
     background-color: #36393E;
     margin-top: 50px;
     margin-right: 20px;
@@ -57,16 +63,19 @@ button {
 }
 
 #building-title {
+    animation: transitionIn 0.75s;
     color: white;
     font-size: 25px;
     margin: 5px;
 }
 
 #building button {
+    animation: transitionIn 0.75s;
     height: 20px;
     background-color:lightcyan
 }
 #building-scroll {
+    animation: transitionIn 0.75s;
     background: white;
     border-radius: 5px;
     overflow-y: scroll;
@@ -74,6 +83,7 @@ button {
     height: inherit;
 }
 #event {
+    animation: transitionIn 0.75s;
     position:relative;
     height:500px;
     margin-right: 20px;
@@ -82,12 +92,14 @@ button {
 }
 
 #event-title {
+    animation: transitionIn 0.75s;
     color: white;
     font-size: 25px;
     margin: 5px;
 }
 
 #event-scroll{
+    animation: transitionIn 0.75s;
     background-color:white;
     border-radius: 5px;
     overflow-y: scroll;
@@ -97,6 +109,7 @@ button {
 }
 
 .event-details,.building-name {
+    animation: transitionIn 0.75s;
     font-size: 15px;
     width:100%;
     margin: 0px;
@@ -109,11 +122,34 @@ button {
 }
 
 .building-name {
+    animation: transitionIn 0.75s;
     text-align: center;
 }
 .event-details:hover,.building-name:hover {
+    animation: transitionIn 0.75s;
     background-color: deepskyblue;
     font-weight:bold;
     cursor: pointer;
 }
 
+tr{
+    animation: transitionIn 0.75s;
+    color:whitesmoke;
+}
+
+th{
+    animation: transitionIn 0.75s;
+    color:whitesmoke;
+}
+
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: rotateY(-10px)
+    }
+    
+    to { 
+        opacity: 1;
+        transform: rotateY(0)
+    }
+}
