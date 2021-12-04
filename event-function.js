@@ -22,7 +22,7 @@ function zoomtoWaypoint(site) {
 
     //in the case that a prior bulding/event building had their marker changed, it will reset it back to blue
     if (previousClick != null) {
-        previousClick.setIcon(blueIcon)
+        previousClick.setStyle({ color: "rgb(51, 136, 255)", fillColor: "rgb(51, 136, 255)"})
     }
 
     switch (site) {
