@@ -1,4 +1,4 @@
-var event_location = []
+var event_location = [] //used for event-function.js.
 //Serve the purpose of using a GET Request toward the Github Gist website and store it into an variable
 async function fetchEvent() {
     const response = await fetch('https://gist.githubusercontent.com/anthonyn5600/42f598c9b99ba68207cce175605b5578/raw/99d1c41e6a6f52a5ec81bfc745a3b95e0e33ecf0/event.json')
