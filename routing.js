@@ -1,4 +1,4 @@
-let accessToken = 'REDACTED_MAPBOX_TOKEN' //used for the mapbox routing calculation
+let accessToken = process.env.MAPBOX_TOKEN //used for the mapbox routing calculation
 
 //remove any current route on the map
 function routeRemove() {
